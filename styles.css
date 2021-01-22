@@ -1,7 +1,88 @@
 body {
+    position: relative;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    min-width: 290px;
+    align-items: center;
+    background: #333333;
+    height: 100vh;
+  }
+  
+  .main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 250px;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(rgb(52, 235, 235), rgb(230, 135, 255));
+    border-radius: 15px;
+  
+    padding: 0 40px 20px 40px;
+  }
+  
+  input {
+    border: solid 1px whitesmoke;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 245px;
+    background-color: black;
+    opacity: 60%;
+    color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+  }
+  input:hover {
+    background-color: lightblue;
+    opacity: 100%;
+    color: whitesmoke;
+  }
+  
+  select {
+    border: solid 1px whitesmoke;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 250px;
+    background-color: black;
+    opacity: 60%;
+    color: whitesmoke;
     font-family: "Roboto", sans-serif;
   }
   
-  .new-reminder {
-      
+  select:hover {
+    background-color: lightblue;
+    opacity: 100%;
+    color: whitesmoke;
   }
+  
+  button {
+    border: solid 1px whitesmoke;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 30px;
+    width: auto;
+    background-color: black;
+    opacity: 60%;
+    color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  button:hover {
+    background-color: lightblue;
+    opacity: 100%;
+    color: whitesmoke;
+  }
+  
+  h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Lobster", cursive;
+  }
+  

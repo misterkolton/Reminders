@@ -1,24 +1,16 @@
-// const reminderSelectElement = document.getElementById("userInput");
-// let reminder = "farts";
-// let reminderInput = reminderSelectElement.value;
-// const reminderOutput = document.getElementById("new-reminder")
-// const saveReminderInputElement = document.getElementById("reminder")
-
-// function saveReminder(e) {
-//   userInput = e.target.value;
-// }
-
-// saveReminderInputElement.addEventListener("change", saveReminder);
+const billInputElement = document.getElementById("reminderInput");
+const saveReminder = document.getElementById("saveReminder");
+const reminderOutput = document.querySelector(".reminderOutput");
 let reminder = "";
-const newReminder = document.getElementById(".userInput")
-const newReminder = document.getElementById(".userInput")
-const newReminder = document.getElementById(".userInput")
 
-
-function saveNewReminder(e) {
-    reminder = e.target.value;
-    console.log(saveNewReminder)
+function saveBill(e) {
+  reminder = e.target.value;
 }
 
-newReminder.addEventListener("change", saveNewReminder)
+function getTotalBill() {
+  const calculatedBill = reminder;
+  reminderOutput.innerHTML = calculatedBill;
+}
 
+billInputElement.addEventListener("change", saveBill);
+saveReminder.addEventListener("click", getTotalBill);
