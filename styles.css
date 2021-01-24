@@ -20,11 +20,11 @@ body {
     width: 250px;
     font-family: 'Dosis', sans-serif;
     background: linear-gradient(rgb(52, 235, 235), rgb(230, 135, 255));
-    border-radius: 15px;
-  
+    border-radius: 15px;  
     padding: 0 40px 20px 40px;
   }
-  
+
+    
   input {
     border: solid 1px whitesmoke;
     justify-content: center;
@@ -41,31 +41,13 @@ body {
     opacity: 100%;
     color: whitesmoke;
   }
-  
-  select {
-    border: solid 1px whitesmoke;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 250px;
-    background-color: black;
-    opacity: 60%;
-    color: whitesmoke;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  select:hover {
-    background-color: lightblue;
-    opacity: 100%;
-    color: whitesmoke;
-  }
-  
+    
   button {
     border: solid 1px whitesmoke;
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 30px;
+    height: 20px;
     width: auto;
     background-color: black;
     opacity: 60%;
@@ -79,10 +61,7 @@ body {
     color: whitesmoke;
   }
   
-  h1 {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    
+
+  ul { 
+      list-style: none;
   }
-  

@@ -1,16 +1,17 @@
-const billInputElement = document.getElementById("reminderInput");
-const saveReminder = document.getElementById("saveReminder");
-const reminderOutput = document.querySelector(".reminderOutput");
-let reminder = "fuck ass";
 
-function newReminder(e) {
-  reminder = e.target.value;
+var ul = document.getElementById("dynamic-list");
+var newReminder = document.getElementById("newReminder");
+
+function addItem(){
+    var li = document.createElement("li");
+    li.setAttribute('id',newReminder.value);
+    li.appendChild(document.createTextNode(newReminder.value));
+    ul.appendChild(li);
+    document.getElementById("newReminder").value='';
 }
 
-function getReminder() {
-  const displayReminder = reminder;
-  reminderOutput.innerHTML = displayReminder;
-  }
-
-billInputElement.addEventListener("change", newReminder);
-saveReminder.addEventListener("click", getReminder);
+function removeItem(){    
+    var item = document.getElementById(newReminder.value);
+    
+    ul.removeChild(item);
+}

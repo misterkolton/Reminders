@@ -15,25 +15,16 @@
     <div class="main-container">
         <h1>Reminders:</h1>
 
-        <div>
-            <form>
-                <input type="text" placeholder="New Reminder..." id="reminderInput">
-            </form>
-            <button id="saveReminder">Save Reminder</button>
-        </div>
+        <input type="text" id="newReminder" />
+        <button onclick="addItem()">New reminder...</button>
 
 
+        <ul id="dynamic-list"></ul>
 
-
-        <br>
-
-        <div class="display">
-
-            <div data-total-bill class="reminderOutput">List:</div>
-        </div>
-
+        <button class="remove-button" onclick="removeItem()">Remove reminder</button>
 
         <script src="index.js"></script>
+    </div>
 </body>
 
 </html>
