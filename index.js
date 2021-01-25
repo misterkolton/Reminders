@@ -11,7 +11,7 @@ function addItem(){
 }
 
 function removeItem(){    
+    var ul = document.getElementById("dynamic-list");
     var item = document.getElementById(newReminder.value);
-    
     ul.removeChild(item);
 }
