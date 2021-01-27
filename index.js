@@ -1,17 +1,15 @@
+const ul = document.getElementById("reminder-list");
+const reminderInput = document.getElementById("reminderInput");
 
-var ul = document.getElementById("dynamic-list");
-var newReminder = document.getElementById("newReminder");
 
 function addItem(){
-    var li = document.createElement("li");
-    li.setAttribute('id',newReminder.value);
-    li.appendChild(document.createTextNode(newReminder.value));
+    const li = document.createElement("li");
+    li.setAttribute('id',reminderInput.value);
+    li.appendChild(document.createTextNode(reminderInput.value));
     ul.appendChild(li);
-    document.getElementById("newReminder").value='';
 }
 
-function removeItem(){    
-    var ul = document.getElementById("dynamic-list");
-    var item = document.getElementById(newReminder.value);
+function removeItem(){
+   const item = document.getElementById(reminderInput.value);
     ul.removeChild(item);
 }

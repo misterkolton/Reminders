@@ -11,48 +11,65 @@ body {
   }
   
   .main-container {
-    align-items: center;
-    flex-direction: column;
     width: 250px;
     font-family: 'Dosis', sans-serif;
     background: linear-gradient(rgb(52, 235, 235), rgb(230, 135, 255));
-    padding: 0 40px 20px 40px;
+    padding: 0 40px 30px 40px;
   }
 
     
   input {
-    border: solid 1px whitesmoke;
-    height: 30px;
+   border: solid 1px #333333;
     width: 245px;
     background-color: black;
     opacity: 60%;
     color: whitesmoke;
-    
-    
   }
+
+    .input-with-button{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    
+  
   input:hover {
     background-color: lightblue;
     opacity: 100%;
     color: whitesmoke;
   }
     
-  button {
-    border: solid 1px whitesmoke;      
-    height: 20px;
-    width: 180px;
+  /* button {
+    border: solid 1px whitesmoke;
+    
+    
     background-color: black;
     opacity: 60%;
     color: whitesmoke;
-    border-radius:  15px;
   }
   
   button:hover {
     background-color: lightblue;
     opacity: 100%;
     color: whitesmoke;
-  }
+  } */
   
 
   ul { 
       list-style: none;
+  }
+
+  /* Style buttons */
+button {
+    background-color: #333333; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
+  /* Darker background on mouse-over */
+  button:hover {
+    background-color: #333333;
   }
